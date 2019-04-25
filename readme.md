@@ -1,50 +1,64 @@
-# Formation NodeJS
+<img src="https://www.creads.fr/app/uploads/sites/1/2017/10/capgemini.png">
 
-## Objectif
+# Live coding NodeJS
 
-Cette formation se compose de 3 parties autour du sujet Javascript/NodeJS.
-- La première partie sur l'historique et à quels besoins répond NodeJS
-- Un tour d'horizon des spécificités de Javascript (es6) et NodeJS (EventLoop)
-- Framwork, introduction aux différents framework NodeJS
+Live coding capgemini autour de NodeJS.
 
+## Phases
 
-Ensuite LiveCoding en utilisant ExpressJS
-
-En annexe, une liste des librairies les plus souvents utilisées pour travailler avec NodeJS.
-
-## Partie 1
-
-### Historique
-
-### Apport par rapport aux technologies existantes
+- Deuxième phase (Création des endpoints utilisateur)
+    - Création du modèle
+    - Création du service (promise)
+    - Création du controleur
+    - Création de la route
+    - Configuration d'express dans app.js
 
 
-## Partie 2
+## Etape précédente
 
-### Javascript (es6)
-1) Asynchrone
+Installation des modules:
+- express
+- bodyparser
+- config (gestion de la configuration par environnement)
+- morgan (log)
+
+## TODO 
+
+### Création du modèle utilisateur
+
+Fichier user.model.js
+
+id: number
+firstname: string
+lastname: string
+
+### Création du service utilisateur
+
+Création du mock (fausse base de données, tableau dans le code)
+fake.user.js
+
+Fichier user.service.js
+
+Méthode à implémenter:
+- getById 
+- getAll
+- create
+
+### Création du controleur utilisateur
+
+Fichier user.controller.js
 
 
-### NodeJS
-2) Event Loop
+### Création des routes
 
-## Partie 3
+Fichier routes.js
 
-### Tour d'horizon des frameworks populaires
-- Express
-- Koa
-- Meteor
-- Nest
-- Sails
+Routes à définir:
+- /user/{id} récupération d'un utilisateur
+- /user récupération de la liste des utilisateurs
+- /user création d'un utilisateur
 
 
-## Annexe
+### Chargement dans app des composants précédents
 
-- moment
-- lodash / 
-- d3
-- animate
-- mocha (UT)
-- passport
-
-
+Déclarer les modèles, services, controleurs
