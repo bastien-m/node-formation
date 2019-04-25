@@ -1,50 +1,35 @@
-# Formation NodeJS
+<img src="https://www.creads.fr/app/uploads/sites/1/2017/10/capgemini.png">
 
-## Objectif
+# Live coding NodeJS
 
-Cette formation se compose de 3 parties autour du sujet Javascript/NodeJS.
-- La première partie sur l'historique et à quels besoins répond NodeJS
-- Un tour d'horizon des spécificités de Javascript (es6) et NodeJS (EventLoop)
-- Framwork, introduction aux différents framework NodeJS
+Live coding capgemini autour de NodeJS.
 
+## Phases
 
-Ensuite LiveCoding en utilisant ExpressJS
-
-En annexe, une liste des librairies les plus souvents utilisées pour travailler avec NodeJS.
-
-## Partie 1
-
-### Historique
-
-### Apport par rapport aux technologies existantes
+- Troisième phase (Connexion à MongoDB)
+    - Installation et configuration du module mongoose
+    - Peuplement de la base de données avec des données fictives
+    - Branchement du service vers la base de données
 
 
-## Partie 2
+## Etape précédente
 
-### Javascript (es6)
-1) Asynchrone
+Création des méthodes et endpoint pour la ressource "user"
 
+## TODO 
 
-### NodeJS
-2) Event Loop
+### Installation et configuration de Mongoose
 
-## Partie 3
+Fichier database.js
 
-### Tour d'horizon des frameworks populaires
-- Express
-- Koa
-- Meteor
-- Nest
-- Sails
+Récupération de la clef api pour se connecter (me demander)
+Initialisation de la connexion
 
+### Modèle utilisateur
 
-## Annexe
-
-- moment
-- lodash / 
-- d3
-- animate
-- mocha (UT)
-- passport
+Modifier le modèle utilisateur pour intégrer les contraintes
 
 
+### Service
+
+Remplacer l'accès au tableau d'utilisateur par un appel vers la base de données
