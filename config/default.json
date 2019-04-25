@@ -1,5 +1,9 @@
 {
     "server": {
         "port": 4000
+    },
+    "database": {
+        "connectionString": "mongodb+srv:/bastien:<password>@capgemini-bastien-smulv.mongodb.net/test?retryWrites=true",
+        "dbName": "formation-node"
     }
 }
