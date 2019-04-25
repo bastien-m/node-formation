@@ -1,0 +1,31 @@
+{
+  "name": "node-formation",
+  "version": "0.0.1",
+  "description": "node formation for capgemini",
+  "main": "app.js",
+  "scripts": {
+    "start": "SET NODE_ENV=dev&& node app",
+    "start-as-prod": "SET NODE_ENV=prod&& node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastien-m/node-formation.git"
+  },
+  "keywords": [
+    "nodejs",
+    "capgemini"
+  ],
+  "author": "bastien.mercier@capgemini.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bastien-m/node-formation/issues"
+  },
+  "homepage": "https://github.com/bastien-m/node-formation#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.1.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
