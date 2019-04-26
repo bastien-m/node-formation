@@ -9,6 +9,8 @@ app.use(morgan('tiny'))
 
 app.use(bodyParser.json())
 
+require('./database')(app)
+
 require('./models')(app)
 require('./services')(app)
 require('./controllers')(app)
@@ -17,9 +19,10 @@ require('./routes')(app)
 
 app.use((err, req, res, next) => {
     if (err) {
-        const err = new app.models.applicationError(3, 'Internal error', console.trace())
+        console.log(err)
+        const appError = new app.models.applicationError(3, 'Internal error', console.trace())
         res.status(500).json({
-            err
+            appError
         })
     } else {
         next()

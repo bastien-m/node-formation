@@ -3,7 +3,6 @@
         "port": 4000
     },
     "database": {
-        "connectionString": "mongodb+srv:/bastien:<password>@capgemini-bastien-smulv.mongodb.net/test?retryWrites=true",
-        "dbName": "formation-node"
+        "connectionString": "mongodb://nodeclient:nodeclient@capgemini-bastien-shard-00-00-smulv.mongodb.net:27017,capgemini-bastien-shard-00-01-smulv.mongodb.net:27017,capgemini-bastien-shard-00-02-smulv.mongodb.net:27017/node-formation?ssl=true&replicaSet=capgemini-bastien-shard-0&authSource=admin&retryWrites=true"
     }
 }

@@ -1,14 +1,11 @@
-class UserModel {
-    constructor(user) {
-        user = user || {}
-        this.id = user.id || 0
-        this.firstname = user.firstname
-        this.lastname = user.lastname
-    }
-}
-
+const mongoose = require('mongoose')
 
 module.exports = (app) => {
+
+    const UserModel = mongoose.model('user', {
+        firstname: String,
+        lastname: String
+    })
 
     return UserModel;
 
